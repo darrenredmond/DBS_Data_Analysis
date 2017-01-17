@@ -1,0 +1,27 @@
+
+- Class: meta
+  Course: Data Analysis
+  Lesson: Simple
+  Author: Darren Redmond
+  Type: Standard
+  Organization: Dublin Business School
+  Version: 1.0.0
+
+- Class: text
+  Output: 'Welcome to the Simple Lesson! In this lesson we will connect to register a result.'
+
+- Class: mult_question
+  Output: Now it is your turn! Is the variability of prices of cars of type 'large'
+    higher or lower than that of cars of type 'small'?
+  AnswerChoices: higher; lower; the same
+  CorrectAnswer: higher
+  AnswerTests: word=higher
+  Hint: Look to see if the range of cars of type 'large' is greater or less than that
+    of cars of type 'small'.
+
+- Class: mult_question
+  Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
+  CorrectAnswer: NULL
+  AnswerChoices: Yes;No
+  AnswerTests: dbs_on_demand()
+  Hint: ""
