@@ -1,23 +1,3 @@
-runTest <- function(...)UseMethod("runTest")
-
-runTest.exact <- function(keyphrase,e){
-  is.correct <- FALSE
-  if(is.numeric(e$val)){
-    correct.ans <- eval(parse(text=rightside(keyphrase)))
-    epsilon <- 0.01*abs(correct.ans)
-    is.correct <- abs(e$val-correct.ans) <= epsilon
-  }
-  return(isTRUE(is.correct))
-}
-
-# Returns TRUE if as.expression
-# (e$expr) matches the expression indicated to the right
-# of "=" in keyphrase
-# keyphrase:equivalent=expression
-runTest.equivalent <- function(keyphrase,e) {
-  return(omnitest(rightside(keyphrase)))
-}
-
 # Get the swirl state
 getState <- function(){
   # Whenever swirl is running, its callback is at the top of its call stack.
@@ -45,7 +25,7 @@ dbs_on_demand <- function(){
   loadDigest()
   selection <- getState()$val
   if(selection == "Yes"){
-    course <- "da_centra_tendency"
+    course <- "da_data_visualization"
     email <- readline("What is your email address? ")
     student_number <- readline("What is your student number? ")
     hash <- digest(paste(course, student_number), "md5", serialize = FALSE)
