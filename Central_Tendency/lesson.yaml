@@ -21,7 +21,7 @@
     of an entire population.'
 
 - Class: figure
-  Output: Here is a diagram showing the relationship between a population and a sample.
+  Output: "Here is a diagram showing the relationship between a population and a sample."
   Figure: mod1_pop_vs_samp.R
   FigureType: new
 
@@ -37,11 +37,11 @@
     this sample of 100 people is REPRESENTATIVE of the entire US population."
 
 - Class: mult_question
-  Output: 'Let''s quickly test your understanding of the term REPRESENTATIVE. If you
+  Output: "Let''s quickly test your understanding of the term REPRESENTATIVE. If you
     were interested in studying the health of men living in the US, ages 18-25, which
     sample would be more representative of the target population: a sample of 50 men
     who live in a nearby retirement home, or a sample of 50 men who are students at
-    a local university?'
+    a local university?"
   AnswerChoices: Men living at the retirement home; College students
   CorrectAnswer: College students
   AnswerTests: word= College students
@@ -49,7 +49,7 @@
     of these 2 sample populations more closely matches the population of interest?"
 
 - Class: video
-  Output: Would you like to watch a video on these topics now?
+  Output: "Would you like to watch a video on these topics now?"
   VideoLink: http://youtu.be/sRArT81TVEM
 
 - Class: text
@@ -72,21 +72,20 @@
     MEDIAN, and MODE."
 
 - Class: video
-  Output: Would you like to watch a brief video on mean, median, and mode?
+  Output: "Would you like to watch a brief video on mean, median, and mode?"
   VideoLink: http://youtu.be/h8EYEJ32oQ8
 
 - Class: mult_question
-  Output: Mean, median, and mode are all measures of ____________.
+  Output: "Mean, median, and mode are all measures of ____________."
   AnswerChoices: variation; significance; deviation; central tendency
   CorrectAnswer: central tendency
   AnswerTests: word=central tendency
-  Hint: This is a fancy term for the "middle" of a dataset.
+  Hint: "This is a fancy term for the "middle" of a dataset."
 
 - Class: mult_question
   Output: "Which of the following terms are of most importance when describing the
     central tendency of a data set?"
-  AnswerChoices: median, mode, range; statistics, population, mode; population, sample,
-    representative; mode, median, mean
+  AnswerChoices: median, mode, range; statistics, population, mode; population, sample, representative; mode, median, mean
   CorrectAnswer: mode, median, mean
   AnswerTests: word= mode, median, mean
   Hint: "These are the three different methods  stated above that are used for describing
@@ -98,7 +97,7 @@
     press Enter to see the dataset we'll be working with."
   CorrectAnswer: cars
   AnswerTests: equivalent=cars
-  Hint: Type 'cars' and press Enter. Do not use quotes, spaces, or uppercase letters.
+  Hint: "Type 'cars' and press Enter. Do not use quotes, spaces, or uppercase letters."
 
 - Class: text
   Output: 'You''ll notice the rows are numbered 1 through 54, each representing exactly
@@ -120,7 +119,7 @@
     and the name of the variable we are interested in is 'mpgCity'."
 
 - Class: cmd_question
-  Output: Now store the contents of the 'cars$mpgCity' in a new variable called 'myMPG'.
+  Output: "Now store the contents of the 'cars$mpgCity' in a new variable called 'myMPG'."
   CorrectAnswer: myMPG <- cars$mpgCity
   AnswerTests: newcmd=myMPG <- cars$mpgCity
   Hint: "Use the assignment operator to assign 'cars$mpgCity' to a new variable called
@@ -137,7 +136,7 @@
     mean. The syntax for doing so is 'mean(variable)'."
 
 - Class: cmd_question
-  Output: Compute the mean value for the 'myMPG' variable now.
+  Output: "Compute the mean value for the 'myMPG' variable now."
   CorrectAnswer: mean(myMPG)
   AnswerTests: newcmd=mean(myMPG)
   Hint: "Use the 'mean' function by typing 'mean' followed by the name of your variable

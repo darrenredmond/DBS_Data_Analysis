@@ -192,37 +192,37 @@
   FigureType: new
 
 - Class: mult_question
-  Output: When looking at the box plot, which car types appear to have outliers?
+  Output: "When looking at the box plot, which car types appear to have outliers?"
   AnswerChoices: small, midsize; midsize, large; small, large; small, midsize, large
   CorrectAnswer: small, midsize
   AnswerTests: word=small, midsize
-  Hint: Look for the types of cars that correspond to the box plots with circles above
-    or below them.
+  Hint: "Look for the types of cars that correspond to the box plots with circles above
+    or below them."
 
 - Class: figure
-  Output: As you can see in the box plot, the data for prices of 'midsize' cars vary
+  Output: "As you can see in the box plot, the data for prices of 'midsize' cars vary
     from around 15 to 62, encompassing a range of approximately 50. This is a great
     deal larger than the variation for 'small' cars which range from around 5 to 15,
     encompassing a range of approximately 10. Therefore, since the range is much greater
     for 'midsize' cars, prices of 'midsize' cars have much higher variability in comparison
-    to the prices of 'small' cars.
+    to the prices of 'small' cars."
   Figure: mod1_boxplot.R
   FigureType: new
 
 - Class: mult_question
-  Output: Now it is your turn! Is the variability of prices of cars of type 'large'
-    higher or lower than that of cars of type 'small'?
+  Output: "Now it is your turn! Is the variability of prices of cars of type 'large'
+    higher or lower than that of cars of type 'small'?"
   AnswerChoices: higher; lower; the same
   CorrectAnswer: higher
   AnswerTests: word=higher
-  Hint: Look to see if the range of cars of type 'large' is greater or less than that
-    of cars of type 'small'.
+  Hint: "Look to see if the range of cars of type 'large' is greater or less than that
+    of cars of type 'small'."
 
 - Class: text
   Output: 'You have officially mastered the concept of dispersion and have fully learned
     how to read and interpret a box-and-whisker plot. These are two very valuable
     tools used everyday in descriptive statistics. Congratulations! In the next lesson,
-    you will learn about data visualization. '
+    you will learn about data visualization.'
 
 - Class: mult_question
   Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"

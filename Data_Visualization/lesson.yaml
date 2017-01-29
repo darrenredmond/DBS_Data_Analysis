@@ -178,38 +178,39 @@
   VideoLink: http://youtu.be/OaJXJduRiIE
 
 - Class: figure
-  Output: I have created a stem-and-leaf plot above using the same values for the
+  Output: "I have created a stem-and-leaf plot above using the same values for the
     'mpgCity' variable as we just used for our histogram. As you can see, a stem-and-leaf
     plot is a useful type of histogram if you want to see the frequencies of specific
     values of the data. Often, there will only be one bin per tens digit, but in this
-    case, R gives us the same bins as we saw in our histogram.
+    case, R gives us the same bins as we saw in our histogram."
   Figure: mod1_stem.R
   FigureType: new
 
 - Class: exact_question
-  Output: Demonstrated on this stem-and-leaf plot, how many occurences of the value
-    '22' are there in this particular data set?
+  Output: "Demonstrated on this stem-and-leaf plot, how many occurences of the value
+    '22' are there in this particular data set?"
   CorrectAnswer: '4'
   AnswerTests: exact=4
 
 - Class: figure
-  Output: The final plot that can be used for discrete or continuous variables is
+  Output: "The final plot that can be used for discrete or continuous variables is
     known as the BOX PLOT, also called a BOX-AND-WHISKER PLOT. As you previously learned,
     this plot is used to summarize the main descriptive statistics of a particular
     data set and help illustrates the concept of variability. I have created a box-and-whisker
-    plot so that you can be reminded of what it looks like.
+    plot so that you can be reminded of what it looks like."
   Figure: mod1_boxplot.R
   FigureType: new
 
 - Class: cmd_question
-  Output: A box plot is used to visually represent the MINIMUM, FIRST QUARTILE (Q1),
+  Output: "A box plot is used to visually represent the MINIMUM, FIRST QUARTILE (Q1),
     MEDIAN, THIRD QUARTILE (Q3), and MAXIMUM of a data set. The R-command 'summary(cars$price)'
-    returns values for these main descriptive statistics. Try this now.
+    returns values for these main descriptive statistics. Try this now."
   CorrectAnswer: summary(cars$price)
   AnswerTests: swirl1cmd=summary(cars$price)
 
 - Class: text
-  Output: 'Up until now, every plot I have introduced has involved only one continous or discrete variable. In a future lesson, we will learn about the plots that are used for categorical variables and multiple variables.'
+  Output: 'Up until now, every plot I have introduced has involved only one continous or discrete variable.
+    In a future lesson, we will learn about the plots that are used for categorical variables and multiple variables.'
 
 - Class: mult_question
   Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
