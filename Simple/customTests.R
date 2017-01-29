@@ -30,12 +30,6 @@ dbs_on_demand <- function(){
     student_number <- readline("What is your student number? ")
     hash <- digest(paste(course, student_number), "md5", serialize = FALSE)
 
-    payload <- sprintf('{
-      "course": "%s",
-      "email": "%s",
-      "student_number": "%s",
-      "hash": "%s",
-    }', course, email, student_number, hash)
     url <- paste('http:///results.dbsdataprojects.com/course_results/submit?course=', course, '&hash=', hash, '&email=', email, '&student_number=', student_number, sep='')
 
     respone <- httr::GET(url)
