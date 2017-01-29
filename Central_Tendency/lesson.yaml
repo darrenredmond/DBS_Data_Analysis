@@ -80,7 +80,7 @@
   AnswerChoices: variation; significance; deviation; central tendency
   CorrectAnswer: central tendency
   AnswerTests: word=central tendency
-  Hint: "This is a fancy term for the "middle" of a dataset."
+  Hint: 'This is a fancy term for the "middle" of a dataset.'
 
 - Class: mult_question
   Output: "Which of the following terms are of most importance when describing the
