@@ -31,12 +31,11 @@
 - Class: mult_question
   Output: "Therefore, it is important to describe both the __________ and _________
     of a data set."
-  AnswerChoices: median, variability; central tendency, dispersion; middle, mean;
-    spread, variability
+  AnswerChoices: median, variability; central tendency, dispersion; middle, mean; spread, variability
   CorrectAnswer: central tendency, dispersion
   AnswerTests: omnitest(correctVal='central tendency, dispersion')
-  Hint: The first term refers to the middle of a dataset. The second term refers to
-    the spread of a dataset.
+  Hint: "The first term refers to the middle of a dataset. The second term refers to
+    the spread of a dataset."
 
 - Class: text
   Output: "In this lesson, we will discuss the three statistical values most commonly
@@ -131,7 +130,7 @@
 
 - Class: figure
   Output: "Here I have created a box plot to represent the price data for each of
-    the three car types: large, midsize, and small. You''ll notice that each of the
+    the three car types: large, midsize, and small. You'll notice that each of the
     3 figures is composed of a closed 4-sided 'box' with 'whiskers' on the top and
     bottom, hence the name box-and-whisker plot."
   Figure: mod1_boxplot.R
