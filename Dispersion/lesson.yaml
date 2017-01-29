@@ -28,14 +28,14 @@
     Two different samples may have the same mean or median, but different levels of
     variability or vice versa."
 
-- Class: mult_question
-  Output: "Therefore, it is important to describe both the __________ and _________
-    of a data set."
-  AnswerChoices: median, variability; central tendency, dispersion; middle, mean; spread, variability
-  CorrectAnswer: central tendency, dispersion
-  AnswerTests: omnitest(correctVal='central tendency, dispersion')
-  Hint: "The first term refers to the middle of a dataset. The second term refers to
-    the spread of a dataset."
+#- Class: mult_question
+#  Output: "Therefore, it is important to describe both the __________ and _________
+#    of a data set."
+#  AnswerChoices: median, variability; central tendency, dispersion; middle, mean; spread, variability
+#  CorrectAnswer: central tendency, dispersion
+#  AnswerTests: omnitest(correctVal='central tendency, dispersion')
+#  Hint: "The first term refers to the middle of a dataset. The second term refers to
+#    the spread of a dataset."
 
 - Class: text
   Output: "In this lesson, we will discuss the three statistical values most commonly
@@ -109,13 +109,13 @@
     and standard deviation are calculated?"
   VideoLink: http://youtu.be/E4HAYd0QnRc
 
-- Class: mult_question
-  Output: "Three important measures of variability are which of the following:"
-  AnswerChoices: mean, median, range; spread, mean, central tendency; variance, dispersion,
-    spread; range, variance, standard deviation
-  CorrectAnswer: range, variance, standard deviation
-  AnswerTests: omnitest(correctVal='range, variance, standard deviation')
-  Hint: "Look for the three specific terms that we focused on calculating."
+#- Class: mult_question
+#  Output: "Three important measures of variability are which of the following:"
+#  AnswerChoices: mean, median, range; spread, mean, central tendency; variance, dispersion,
+#    spread; range, variance, standard deviation
+#  CorrectAnswer: range, variance, standard deviation
+#  AnswerTests: omnitest(correctVal='range, variance, standard deviation')
+#  Hint: "Look for the three specific terms that we focused on calculating."
 
 - Class: text
   Output: "A BOX PLOT, also called a BOX-AND-WHISKER PLOT, is used to summarize the
@@ -190,13 +190,13 @@
   Figure: mod1_boxplot.R
   FigureType: new
 
-- Class: mult_question
-  Output: "When looking at the box plot, which car types appear to have outliers?"
-  AnswerChoices: small, midsize; midsize, large; small, large; small, midsize, large
-  CorrectAnswer: small, midsize
-  AnswerTests: omnitest(correctVal='small, midsize')
-  Hint: "Look for the types of cars that correspond to the box plots with circles above
-    or below them."
+#- Class: mult_question
+#  Output: "When looking at the box plot, which car types appear to have outliers?"
+#  AnswerChoices: small, midsize; midsize, large; small, large; small, midsize, large
+#  CorrectAnswer: small, midsize
+#  AnswerTests: omnitest(correctVal='small, midsize')
+#  Hint: "Look for the types of cars that correspond to the box plots with circles above
+#    or below them."
 
 - Class: figure
   Output: "As you can see in the box plot, the data for prices of 'midsize' cars vary
@@ -208,14 +208,14 @@
   Figure: mod1_boxplot.R
   FigureType: new
 
-- Class: mult_question
-  Output: "Now it is your turn! Is the variability of prices of cars of type 'large'
-    higher or lower than that of cars of type 'small'?"
-  AnswerChoices: higher; lower; the same
-  CorrectAnswer: higher
-  AnswerTests: omnitest(correctVal='higher')
-  Hint: "Look to see if the range of cars of type 'large' is greater or less than that
-    of cars of type 'small'."
+#- Class: mult_question
+#  Output: "Now it is your turn! Is the variability of prices of cars of type 'large'
+#    higher or lower than that of cars of type 'small'?"
+#  AnswerChoices: higher; lower; the same
+#  CorrectAnswer: higher
+#  AnswerTests: omnitest(correctVal='higher')
+#  Hint: "Look to see if the range of cars of type 'large' is greater or less than that
+#    of cars of type 'small'."
 
 - Class: text
   Output: 'You have officially mastered the concept of dispersion and have fully learned
