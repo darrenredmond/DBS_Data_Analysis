@@ -51,33 +51,33 @@
   Output: "To demonstrate how you can use R to determine the range of a data set we
     will refer back to the cars data set from the previous lesson."
 
-- Class: cmd_question
-  Output: "Type in the R-command 'range(cars$price)' to determine the exact values
-    for the minimum and maximum prices of cars in the data set."
-  CorrectAnswer: range(cars$price)
-  AnswerTests: swirl1cmd=range(cars$price)
-  Hint: "Type in 'range(cars$price)' without quotations and press enter to see the
-    minimum and maximum prices."
+#- Class: cmd_question
+#  Output: "Type in the R-command 'range(cars$price)' to determine the exact values
+#    for the minimum and maximum prices of cars in the data set."
+#  CorrectAnswer: range(cars$price)
+#  AnswerTests: swirl1cmd=range(cars$price)
+#  Hint: "Type in 'range(cars$price)' without quotations and press enter to see the
+#    minimum and maximum prices."
 
-- Class: exact_question
-  Output: "Now that you have the minimum and maximum 'price' values, calculate the
-    range of the 'price' data."
-  CorrectAnswer: '54.5'
-  AnswerTests: exact=54.5
-  Hint: Subtract the minimum price value from the maximum price value.
+#- Class: exact_question
+#  Output: "Now that you have the minimum and maximum 'price' values, calculate the
+#    range of the 'price' data."
+#  CorrectAnswer: '54.5'
+#  AnswerTests: exact=54.5
+#  Hint: Subtract the minimum price value from the maximum price value.
 
 - Class: text
   Output: "The second important measure of variability is known as VARIANCE. Mathematically,
     VARIANCE is the average of the squared differences from the mean. More simply,
     variance represents the total distance of the data from the mean."
 
-- Class: cmd_question
-  Output: "In R, you can use the command 'var(data)' to easily calculate the variance
-    of a particular set of data. Try calculating the variance for the data 'cars$price'."
-  CorrectAnswer: var(cars$price)
-  AnswerTests: swirl1cmd=var(cars$price)
-  Hint: "Type in 'var(cars$price)' without quotations and press enter to see the variance
-    of the prices of cars."
+#- Class: cmd_question
+#  Output: "In R, you can use the command 'var(data)' to easily calculate the variance
+#    of a particular set of data. Try calculating the variance for the data 'cars$price'."
+#  CorrectAnswer: var(cars$price)
+#  AnswerTests: swirl1cmd=var(cars$price)
+#  Hint: "Type in 'var(cars$price)' without quotations and press enter to see the variance
+#    of the prices of cars."
 
 - Class: text
   Output: "The values for variance and standard deviation are very closely related.
@@ -89,14 +89,14 @@
     of variability because it is expressed in the same units as the original data
     values."
 
-- Class: cmd_question
-  Output: "Similar to variance, you can use the R-command 'sd(data)' to calculate the
-    standard deviation of a particular set of data. Try calculating the standard deviation
-    for the data 'cars$price'."
-  CorrectAnswer: sd(cars$price)
-  AnswerTests: swirl1cmd=sd(cars$price)
-  Hint: "Type in 'sd(cars$price)' without quotations and press enter to see the standard
-    deviation of the prices of cars."
+#- Class: cmd_question
+#  Output: "Similar to variance, you can use the R-command 'sd(data)' to calculate the
+#    standard deviation of a particular set of data. Try calculating the standard deviation
+#    for the data 'cars$price'."
+#  CorrectAnswer: sd(cars$price)
+#  AnswerTests: swirl1cmd=sd(cars$price)
+#  Hint: "Type in 'sd(cars$price)' without quotations and press enter to see the standard
+#    deviation of the prices of cars."
 
 - Class: text
   Output: "The standard deviation is very important when analyzing our data set. A
@@ -149,13 +149,13 @@
     the upper 25% and lower 25% of data points, respectively. The only exception is
     when there are outliers, which I'll explain shortly."
 
-- Class: range_question
-  Output: "Looking at the box plot, what is the approximate interquartile range for
-    the midsize vehicles?"
-  CorrectAnswer: 16; 22
-  AnswerTests: range=16-22
-  Hint: "Subtract the Q1 value from the Q3 value. The Q1 value is the minimum value
-    contained in the box and the Q3 value is the maximum value contained in the box."
+#- Class: range_question
+#  Output: "Looking at the box plot, what is the approximate interquartile range for
+#    the midsize vehicles?"
+#  CorrectAnswer: 16; 22
+#  AnswerTests: range=16-22
+#  Hint: "Subtract the Q1 value from the Q3 value. The Q1 value is the minimum value
+#    contained in the box and the Q3 value is the maximum value contained in the box."
 
 - Class: text
   Output: "Let's take a closer look at how quartiles are calculated. We start by sorting
@@ -218,10 +218,10 @@
 #    of cars of type 'small'."
 
 - Class: text
-  Output: 'You have officially mastered the concept of dispersion and have fully learned
+  Output: "You have officially mastered the concept of dispersion and have fully learned
     how to read and interpret a box-and-whisker plot. These are two very valuable
     tools used everyday in descriptive statistics. Congratulations! In the next lesson,
-    you will learn about data visualization.'
+    you will learn about data visualization."
 
 - Class: mult_question
   Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
