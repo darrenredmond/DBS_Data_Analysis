@@ -16,25 +16,7 @@ getExpr <- function(){
   getState()$expr
 }
 
-runTest <- function(...)UseMethod("runTest")
-
-runTest.exact <- function(keyphrase,e){
-  is.correct <- FALSE
-  if(is.numeric(e$val)){
-    correct.ans <- eval(parse(text=rightside(keyphrase)))
-    epsilon <- 0.01*abs(correct.ans)
-    is.correct <- abs(e$val-correct.ans) <= epsilon
-  }
-  return(isTRUE(is.correct))
-}
-
-# Returns TRUE if as.expression
-# (e$expr) matches the expression indicated to the right
-# of "=" in keyphrase
-# keyphrase:equivalent=expression
-runTest.equivalent <- function(keyphrase,e) {
-  return(omnitest(rightside(keyphrase)))
-}
+COURSE <- 'da_central_tendency'
 
 loadDigest <- function(){
   if (!require("digest")) install.packages("digest")
@@ -45,10 +27,11 @@ dbs_on_demand <- function(){
   loadDigest()
   selection <- getState()$val
   if(selection == "Yes"){
-    course <- "da_central_tendency"
+    course <- COURSE
     email <- readline("What is your email address? ")
     student_number <- readline("What is your student number? ")
     hash <- digest(paste(course, student_number), "md5", serialize = FALSE)
+
     url <- paste('http:///results.dbsdataprojects.com/course_results/submit?course=', course, '&hash=', hash, '&email=', email, '&student_number=', student_number, sep='')
 
     respone <- httr::GET(url)

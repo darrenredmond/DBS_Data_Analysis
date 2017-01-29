@@ -3,3 +3,4 @@ draw.circle(0,0,7,border="black",col="yellow")
 draw.circle(3,0,3,border="black",col="red")
 text(-3.5,0,"Population", font=2)
 text(3,0,"Sample", font=2)
+

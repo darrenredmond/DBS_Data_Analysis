@@ -1,4 +1,3 @@
-
 - Class: meta
   Course: Data Analysis
   Lesson: Central Tendency
@@ -44,7 +43,7 @@
     a local university?"
   AnswerChoices: Men living at the retirement home; College students
   CorrectAnswer: College students
-  AnswerTests: word= College students
+  AnswerTests: omnitest(correctVal='College students')
   Hint: "Since your target population is all men ages 18-25 living in the US, which
     of these 2 sample populations more closely matches the population of interest?"
 
@@ -79,7 +78,7 @@
   Output: "Mean, median, and mode are all measures of ____________."
   AnswerChoices: variation; significance; deviation; central tendency
   CorrectAnswer: central tendency
-  AnswerTests: word=central tendency
+  AnswerTests: omnitest(correctVal='central tendency')
   Hint: 'This is a fancy term for the "middle" of a dataset.'
 
 - Class: mult_question
@@ -87,7 +86,7 @@
     central tendency of a data set?"
   AnswerChoices: median, mode, range; statistics, population, mode; population, sample, representative; mode, median, mean
   CorrectAnswer: mode, median, mean
-  AnswerTests: word= mode, median, mean
+  AnswerTests: omnitest(correctVal='mode, median, mean')
   Hint: "These are the three different methods  stated above that are used for describing
     the center of a data set."
 
@@ -100,11 +99,11 @@
   Hint: "Type 'cars' and press Enter. Do not use quotes, spaces, or uppercase letters."
 
 - Class: text
-  Output: 'You''ll notice the rows are numbered 1 through 54, each representing exactly
+  Output: "You'll notice the rows are numbered 1 through 54, each representing exactly
     one car in the dataset. For each car, the following VARIABLES, or characteristics,
-    are reported: ''type'' (small, midsize, large), ''price'' (USD), ''mpgCity'' (city
-    miles per gallon), ''driveTrain'' (4WD, front, rear), ''passengers'' (total capacity),
-    and ''weight'' (lbs).'
+    are reported: 'type' (small, midsize, large), 'price' (USD), 'mpgCity' (city
+    miles per gallon), 'driveTrain' (4WD, front, rear), 'passengers' (total capacity),
+    and 'weight' (lbs)."
 
 - Class: text
   Output: "We'll be focusing on the 'mpgCity' variable in this lesson. For simplicity,
