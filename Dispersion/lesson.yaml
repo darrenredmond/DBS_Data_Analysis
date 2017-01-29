@@ -10,32 +10,8 @@
 - Class: text
   Output: "Welcome to Lesson 2! In this lesson, we will learn what DISPERSION is and
     what statistical values are needed in order to best describe the spread of data.
-    Further, you will learn all about a box-and-whisker plot which is  a plot commonly
+    Further, you will learn all about a box-and-whisker plot which is a plot commonly
     used by statisticians when determining variability."
-
-- Class: text
-  Output: "While measures of central tendency are used to estimate the middle values
-    of a dataset, measures of dispersion are important for describing the spread of
-    the data."
-
-- Class: text
-  Output: "The term dispersion refers to degree to which the data values are scattered
-    around an average value. Dispersion is synonymous with other words such as variability
-    and spread."
-
-- Class: text
-  Output: "Why is it important to analyze the spread of a particular set of data?
-    Two different samples may have the same mean or median, but different levels of
-    variability or vice versa."
-
-#- Class: mult_question
-#  Output: "Therefore, it is important to describe both the __________ and _________
-#    of a data set."
-#  AnswerChoices: median, variability; central tendency, dispersion; middle, mean; spread, variability
-#  CorrectAnswer: central tendency, dispersion
-#  AnswerTests: omnitest(correctVal='central tendency, dispersion')
-#  Hint: "The first term refers to the middle of a dataset. The second term refers to
-#    the spread of a dataset."
 
 - Class: mult_question
   Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
